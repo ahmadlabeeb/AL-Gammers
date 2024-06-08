@@ -11,7 +11,7 @@ import SwiftUI
 struct GammersApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            HomeScreenView.getInstance()
         }
     }
 }
