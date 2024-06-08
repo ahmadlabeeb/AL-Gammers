@@ -14,6 +14,7 @@
 		E95D9D812C13355600165CCA /* GammersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9D802C13355600165CCA /* GammersTests.swift */; };
 		E95D9D8B2C13355600165CCA /* GammersUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9D8A2C13355600165CCA /* GammersUITests.swift */; };
 		E95D9D8D2C13355600165CCA /* GammersUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9D8C2C13355600165CCA /* GammersUITestsLaunchTests.swift */; };
+		E95D9DB02C1436BE00165CCA /* InfoPlistHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9DAF2C1436BE00165CCA /* InfoPlistHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,9 @@
 		E95D9D862C13355600165CCA /* GammersUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GammersUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95D9D8A2C13355600165CCA /* GammersUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammersUITests.swift; sourceTree = "<group>"; };
 		E95D9D8C2C13355600165CCA /* GammersUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammersUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E95D9DAF2C1436BE00165CCA /* InfoPlistHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoPlistHelper.swift; sourceTree = "<group>"; };
+		E95D9DB12C14389300165CCA /* dev.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = dev.xcconfig; sourceTree = "<group>"; };
+		E95D9DB22C1438F600165CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +98,11 @@
 		E95D9D6E2C13355400165CCA /* Gammers */ = {
 			isa = PBXGroup;
 			children = (
-				E95D9D6F2C13355400165CCA /* GammersApp.swift */,
-				E95D9D712C13355400165CCA /* ContentView.swift */,
-				E95D9D732C13355600165CCA /* Assets.xcassets */,
+				E95D9DB22C1438F600165CCA /* Info.plist */,
+				E95D9DAD2C14346F00165CCA /* Helpers */,
+				E95D9DAA2C14342600165CCA /* APP */,
+				E95D9DAB2C14343300165CCA /* Scenes */,
+				E95D9DAC2C14345A00165CCA /* Resources */,
 				E95D9D752C13355600165CCA /* Preview Content */,
 			);
 			path = Gammers;
@@ -125,6 +131,47 @@
 				E95D9D8C2C13355600165CCA /* GammersUITestsLaunchTests.swift */,
 			);
 			path = GammersUITests;
+			sourceTree = "<group>";
+		};
+		E95D9DAA2C14342600165CCA /* APP */ = {
+			isa = PBXGroup;
+			children = (
+				E95D9D6F2C13355400165CCA /* GammersApp.swift */,
+				E95D9DAE2C14348A00165CCA /* Config Files */,
+			);
+			path = APP;
+			sourceTree = "<group>";
+		};
+		E95D9DAB2C14343300165CCA /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				E95D9D712C13355400165CCA /* ContentView.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		E95D9DAC2C14345A00165CCA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E95D9D732C13355600165CCA /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		E95D9DAD2C14346F00165CCA /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				E95D9DAF2C1436BE00165CCA /* InfoPlistHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		E95D9DAE2C14348A00165CCA /* Config Files */ = {
+			isa = PBXGroup;
+			children = (
+				E95D9DB12C14389300165CCA /* dev.xcconfig */,
+			);
+			path = "Config Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +304,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E95D9DB02C1436BE00165CCA /* InfoPlistHelper.swift in Sources */,
 				E95D9D722C13355400165CCA /* ContentView.swift in Sources */,
 				E95D9D702C13355400165CCA /* GammersApp.swift in Sources */,
 			);
@@ -416,6 +464,7 @@
 		};
 		E95D9D912C13355600165CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95D9DB12C14389300165CCA /* dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -425,6 +474,7 @@
 				DEVELOPMENT_TEAM = 77H8P22UE4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gammers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -445,6 +495,7 @@
 		};
 		E95D9D922C13355600165CCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E95D9DB12C14389300165CCA /* dev.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -454,6 +505,7 @@
 				DEVELOPMENT_TEAM = 77H8P22UE4;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Gammers/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
