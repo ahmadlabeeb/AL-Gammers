@@ -10,8 +10,11 @@
 		34A5EBA86A88E363350DDFF7 /* Pods_GammersTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78B2978CF0B083B43DB890F6 /* Pods_GammersTests.framework */; };
 		3C36301FC820308E8C3BF06A /* Pods_Gammers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5BC87042A0543A3A26D9F404 /* Pods_Gammers.framework */; };
 		9E497537F69B9FB7FD56F675 /* Pods_Gammers_GammersUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0548316412A55D79E6B8C409 /* Pods_Gammers_GammersUITests.framework */; };
+		E9202DBB2C15FD38007F5650 /* CarouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DBA2C15FD38007F5650 /* CarouselItemView.swift */; };
+		E9202DBE2C15FE15007F5650 /* GiveawayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DBD2C15FE15007F5650 /* GiveawayListView.swift */; };
+		E9202DC02C15FE27007F5650 /* GiveawayListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DBF2C15FE27007F5650 /* GiveawayListItem.swift */; };
+		E9202DC32C18F2CE007F5650 /* GivawayDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DC22C18F2CE007F5650 /* GivawayDetailsView.swift */; };
 		E95D9D702C13355400165CCA /* GammersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9D6F2C13355400165CCA /* GammersApp.swift */; };
-		E95D9D722C13355400165CCA /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9D712C13355400165CCA /* ContentView.swift */; };
 		E95D9D742C13355600165CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95D9D732C13355600165CCA /* Assets.xcassets */; };
 		E95D9D772C13355600165CCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95D9D762C13355600165CCA /* Preview Assets.xcassets */; };
 		E95D9D812C13355600165CCA /* GammersTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9D802C13355600165CCA /* GammersTests.swift */; };
@@ -24,6 +27,7 @@
 		E95D9DC42C14868100165CCA /* HomeScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9DC32C14868100165CCA /* HomeScreenView.swift */; };
 		E95D9DC62C1486A300165CCA /* HomeScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9DC52C1486A300165CCA /* HomeScreenViewModel.swift */; };
 		E95D9DC82C14874E00165CCA /* HomeScreenRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9DC72C14874E00165CCA /* HomeScreenRepo.swift */; };
+		E95D9DCA2C14FE8900165CCA /* UpperCarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9DC92C14FE8900165CCA /* UpperCarouselView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,9 +57,12 @@
 		78B2978CF0B083B43DB890F6 /* Pods_GammersTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GammersTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD27CB68908F870CEDFF8E7B /* Pods-Gammers-GammersUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gammers-GammersUITests.release.xcconfig"; path = "Target Support Files/Pods-Gammers-GammersUITests/Pods-Gammers-GammersUITests.release.xcconfig"; sourceTree = "<group>"; };
 		C4BE32CAAF5D2985119C7D41 /* Pods-Gammers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Gammers.debug.xcconfig"; path = "Target Support Files/Pods-Gammers/Pods-Gammers.debug.xcconfig"; sourceTree = "<group>"; };
+		E9202DBA2C15FD38007F5650 /* CarouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemView.swift; sourceTree = "<group>"; };
+		E9202DBD2C15FE15007F5650 /* GiveawayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayListView.swift; sourceTree = "<group>"; };
+		E9202DBF2C15FE27007F5650 /* GiveawayListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayListItem.swift; sourceTree = "<group>"; };
+		E9202DC22C18F2CE007F5650 /* GivawayDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivawayDetailsView.swift; sourceTree = "<group>"; };
 		E95D9D6C2C13355400165CCA /* Gammers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gammers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95D9D6F2C13355400165CCA /* GammersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammersApp.swift; sourceTree = "<group>"; };
-		E95D9D712C13355400165CCA /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		E95D9D732C13355600165CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E95D9D762C13355600165CCA /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		E95D9D7C2C13355600165CCA /* GammersTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GammersTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,6 +79,7 @@
 		E95D9DC32C14868100165CCA /* HomeScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenView.swift; sourceTree = "<group>"; };
 		E95D9DC52C1486A300165CCA /* HomeScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenViewModel.swift; sourceTree = "<group>"; };
 		E95D9DC72C14874E00165CCA /* HomeScreenRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScreenRepo.swift; sourceTree = "<group>"; };
+		E95D9DC92C14FE8900165CCA /* UpperCarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpperCarouselView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,32 @@
 				0D6D37D37D057627EFD2FAEB /* Pods-GammersTests.release.xcconfig */,
 			);
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		E9202DB92C15FD1E007F5650 /* UpperCarousel */ = {
+			isa = PBXGroup;
+			children = (
+				E95D9DC92C14FE8900165CCA /* UpperCarouselView.swift */,
+				E9202DBA2C15FD38007F5650 /* CarouselItemView.swift */,
+			);
+			path = UpperCarousel;
+			sourceTree = "<group>";
+		};
+		E9202DBC2C15FDDE007F5650 /* AllGiveawayList */ = {
+			isa = PBXGroup;
+			children = (
+				E9202DBD2C15FE15007F5650 /* GiveawayListView.swift */,
+				E9202DBF2C15FE27007F5650 /* GiveawayListItem.swift */,
+			);
+			path = AllGiveawayList;
+			sourceTree = "<group>";
+		};
+		E9202DC12C18F29B007F5650 /* DetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				E9202DC22C18F2CE007F5650 /* GivawayDetailsView.swift */,
+			);
+			path = DetailsScreen;
 			sourceTree = "<group>";
 		};
 		E95D9D632C13355400165CCA = {
@@ -198,8 +232,8 @@
 		E95D9DAB2C14343300165CCA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				E9202DC12C18F29B007F5650 /* DetailsScreen */,
 				E95D9DC22C1483FC00165CCA /* HomeScreen */,
-				E95D9D712C13355400165CCA /* ContentView.swift */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
@@ -249,6 +283,8 @@
 		E95D9DC22C1483FC00165CCA /* HomeScreen */ = {
 			isa = PBXGroup;
 			children = (
+				E9202DBC2C15FDDE007F5650 /* AllGiveawayList */,
+				E9202DB92C15FD1E007F5650 /* UpperCarousel */,
 				E95D9DC32C14868100165CCA /* HomeScreenView.swift */,
 				E95D9DC52C1486A300165CCA /* HomeScreenViewModel.swift */,
 				E95D9DC72C14874E00165CCA /* HomeScreenRepo.swift */,
@@ -495,14 +531,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				E95D9DBC2C1452EB00165CCA /* NetworkManager.swift in Sources */,
+				E9202DC02C15FE27007F5650 /* GiveawayListItem.swift in Sources */,
+				E9202DBB2C15FD38007F5650 /* CarouselItemView.swift in Sources */,
 				E95D9DC62C1486A300165CCA /* HomeScreenViewModel.swift in Sources */,
 				E95D9DBA2C14402A00165CCA /* GiveawayEntityModel.swift in Sources */,
+				E9202DBE2C15FE15007F5650 /* GiveawayListView.swift in Sources */,
+				E9202DC32C18F2CE007F5650 /* GivawayDetailsView.swift in Sources */,
 				E95D9DB02C1436BE00165CCA /* InfoPlistHelper.swift in Sources */,
-				E95D9D722C13355400165CCA /* ContentView.swift in Sources */,
 				E95D9DB62C143CE700165CCA /* GiveawayEndpoint.swift in Sources */,
 				E95D9DC42C14868100165CCA /* HomeScreenView.swift in Sources */,
 				E95D9D702C13355400165CCA /* GammersApp.swift in Sources */,
 				E95D9DC82C14874E00165CCA /* HomeScreenRepo.swift in Sources */,
+				E95D9DCA2C14FE8900165CCA /* UpperCarouselView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

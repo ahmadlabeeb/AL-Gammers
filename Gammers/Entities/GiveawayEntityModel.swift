@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct GiveawayEntityModel: Codable {
+struct GiveawayEntityModel: Codable, Identifiable {
     let id: Int
     let title, worth: String
     let thumbnail, image: String
@@ -19,6 +19,7 @@ struct GiveawayEntityModel: Codable {
     let users: Int
     let status: Status
     let gamerPowerURL, openGiveaway: String
+    var isFavorite: Bool = false
 
     enum CodingKeys: String, CodingKey {
         case id, title, worth, thumbnail, image, description, instructions
