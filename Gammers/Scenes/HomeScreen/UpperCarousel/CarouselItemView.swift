@@ -64,7 +64,7 @@ struct CarouselItemView: View {
         instructions: "1. Click the \"Get Giveaway\" button to visit the giveaway page.\r\n2. Login into your Epic Games Store account.\r\n3. Click the button to add the game to your library",
         openGiveawayURL: "https://www.gamerpower.com/open/marvel-s-midnight-suns-epic-games-giveaway",
         publishedDate: "2024-06-06 11:06:18",
-        type: .game,
+        type: "Game",
         platforms: "PC, Epic Games Store",
         endDate: "2024-06-13 23:59:00",
         users: 4190,

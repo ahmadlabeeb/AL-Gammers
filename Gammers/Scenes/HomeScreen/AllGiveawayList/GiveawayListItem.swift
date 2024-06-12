@@ -50,6 +50,7 @@ struct GiveawayListItem: View {
                         .font(.system(size: 30))
                         .fontWeight(.bold)
                         .foregroundColor(.white)
+                        .multilineTextAlignment(.leading)
                     Text(item.platforms)
                         .font(.system(size: 13))
                         .fontWeight(.light)
@@ -58,6 +59,7 @@ struct GiveawayListItem: View {
                     Text(item.description)
                         .font(.subheadline)
                         .foregroundColor(.white)
+                        .multilineTextAlignment(.leading)
                 }
                     .padding([.top, .bottom, .leading], 10)
                     .padding(.trailing, 40),
@@ -93,7 +95,7 @@ struct GiveawayListItem: View {
 #Preview {
     GiveawayListItem(item: GiveawayEntityModel(
         id: 2870,
-        title: "Marvel's Midnight Suns (Epic Games) Giveaway",
+        title: "Dauntless - Golden Drake's Eye Bundle Giveaway",
         worth: "Free",
         thumbnail: "https://www.gamerpower.com/offers/1/6661d06ae65fa.jpg",
         image: "https://www.gamerpower.com/offers/1b/66672d014b21f.jpg",
@@ -101,7 +103,7 @@ struct GiveawayListItem: View {
         instructions: "1. Visit IndieGala giveaway page.\r\n2. Login into your IndieGala account.\r\n3. Click the button to add the game to your library.",
         openGiveawayURL: "https://www.gamerpower.com/open/rex-indiegala-giveaway",
         publishedDate: "2024-06-06 11:06:18",
-        type: .game,
+        type: "Game",
         platforms: "PC, DRM-Free",
         endDate: "2024-06-13 23:59:00",
         users: 4190,

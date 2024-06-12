@@ -47,15 +47,15 @@ struct GiveawayDetailsView: View {
     
     func drawMiddleView() -> some View {
         HStack {
-            infoView(iconName: "dollarsign.circle.fill", text: "N/A")
+            infoView(iconName: "dollarsign.circle.fill", text: viewModel.item.worth)
                     Divider()
                 .frame(width: 1,height: 50)
                 .background(Color.gray.opacity(0.5))
-            infoView(iconName: "person.2.fill", text: "640")
+            infoView(iconName: "person.2.fill", text: "\(viewModel.item.users)")
                     Divider()
                 .frame(width: 1,height: 50)
                 .background(Color.gray.opacity(0.5))
-            infoView(iconName: "gamecontroller.fill", text: "DLC")
+            infoView(iconName: "gamecontroller.fill", text: viewModel.item.type)
                 }
                 .padding()
                 .frame(maxWidth: .infinity)
@@ -81,7 +81,7 @@ struct GiveawayDetailsView: View {
                 image
                     .resizable()
                     .imageScale(.medium)
-                    //.scaledToFit()
+                    
             } placeholder: {
                 Color.gray // Placeholder color
             }
@@ -115,7 +115,7 @@ struct GiveawayDetailsView: View {
                 Spacer()
                 
                 HStack {
-                    Text("HAWKED - Dryad Color Scheme Key Giveaway")
+                    Text(viewModel.item.title)
                         .font(.title2)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
@@ -164,7 +164,7 @@ struct GiveawayDetailsView: View {
         instructions: "1. Click the \"Get Giveaway\" button to visit the giveaway page.\r\n2. Login into your Epic Games Store account.\r\n3. Click the button to add the game to your library",
         openGiveawayURL: "https://www.gamerpower.com/open/marvel-s-midnight-suns-epic-games-giveaway",
         publishedDate: "2024-06-06 11:06:18",
-        type: .game,
+        type: "Game",
         platforms: "PC, Epic Games Store",
         endDate: "2024-06-13 23:59:00",
         users: 4190,
@@ -175,27 +175,3 @@ struct GiveawayDetailsView: View {
     )
     )
 }
-
-
-//import SwiftUI
-//
-//struct ContentView: View {
-//    let imageUrl = URL(string: "https://your-image-url.com") // Replace with your actual image URL
-//
-//    var body: some View {
-//        ZStack {
-//            
-//        
-//        }
-//        .edgesIgnoringSafeArea(.all)
-//    }
-//}
-//
-//@main
-//struct MyApp: App {
-//    var body: some Scene {
-//        WindowGroup {
-//            ContentView()
-//        }
-//    }
-//}

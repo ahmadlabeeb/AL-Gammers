@@ -14,7 +14,7 @@ struct GiveawayEntityModel: Codable, Identifiable {
     let description, instructions: String
     let openGiveawayURL: String
     let publishedDate: String
-    let type: GameType
+    let type: String
     let platforms, endDate: String
     let users: Int
     let status: Status
@@ -37,9 +37,3 @@ enum Status: String, Codable {
     case active = "Active"
 }
 
-enum GameType: String, Codable {
-    case dlc = "DLC"
-    case earlyAccess = "Early Access"
-    case game = "Game"
-    case other = "Other"
-}
