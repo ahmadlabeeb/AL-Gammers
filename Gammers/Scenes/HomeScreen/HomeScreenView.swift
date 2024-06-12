@@ -9,7 +9,7 @@ import SwiftUI
 import Moya
 import Combine
 
-var subscriptions = [AnyCancellable]()
+
 struct HomeScreenView: View {
     
     static func getInstance() -> HomeScreenView {
@@ -23,25 +23,24 @@ struct HomeScreenView: View {
     }
     
     var body: some View {
-        ZStack {
-            if viewModel.isloading {
-               Text("Loading...")
-            }
-            else {
-                VStack {
-                    UpperCarouselView(items: viewModel.itemsList)
-                    
-                    filterList()
-                    
-                    GiveawayListView(items: viewModel.itemsList, selectedCategory: selectedCategory)
+        NavigationView {
+            ZStack {
+                if viewModel.isloading {
+                    Text("Loading...")
+                }
+                else {
+                    VStack {
+                        UpperCarouselView(items: viewModel.itemsList)
+                        
+                        filterList()
+                        
+                        GiveawayListView(items: viewModel.itemsList, selectedCategory: selectedCategory)
+                    }
                 }
             }
         }
         .onAppear(perform: {
             viewModel.getAllGiveaways()
-            viewModel.$itemsList.sink { items in
-                self.isLoading = items.isEmpty
-            }.store(in: &subscriptions)
         })
     }
     

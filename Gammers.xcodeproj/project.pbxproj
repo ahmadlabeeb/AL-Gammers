@@ -13,7 +13,9 @@
 		E9202DBB2C15FD38007F5650 /* CarouselItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DBA2C15FD38007F5650 /* CarouselItemView.swift */; };
 		E9202DBE2C15FE15007F5650 /* GiveawayListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DBD2C15FE15007F5650 /* GiveawayListView.swift */; };
 		E9202DC02C15FE27007F5650 /* GiveawayListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DBF2C15FE27007F5650 /* GiveawayListItem.swift */; };
-		E9202DC32C18F2CE007F5650 /* GivawayDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DC22C18F2CE007F5650 /* GivawayDetailsView.swift */; };
+		E9202DC32C18F2CE007F5650 /* GiveawayDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DC22C18F2CE007F5650 /* GiveawayDetailsView.swift */; };
+		E9202DC52C18F4A4007F5650 /* GiveawayDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DC42C18F4A4007F5650 /* GiveawayDetailsViewModel.swift */; };
+		E9202DC72C1906EE007F5650 /* String+DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9202DC62C1906EE007F5650 /* String+DateFormatter.swift */; };
 		E95D9D702C13355400165CCA /* GammersApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E95D9D6F2C13355400165CCA /* GammersApp.swift */; };
 		E95D9D742C13355600165CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95D9D732C13355600165CCA /* Assets.xcassets */; };
 		E95D9D772C13355600165CCA /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E95D9D762C13355600165CCA /* Preview Assets.xcassets */; };
@@ -60,7 +62,9 @@
 		E9202DBA2C15FD38007F5650 /* CarouselItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselItemView.swift; sourceTree = "<group>"; };
 		E9202DBD2C15FE15007F5650 /* GiveawayListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayListView.swift; sourceTree = "<group>"; };
 		E9202DBF2C15FE27007F5650 /* GiveawayListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayListItem.swift; sourceTree = "<group>"; };
-		E9202DC22C18F2CE007F5650 /* GivawayDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GivawayDetailsView.swift; sourceTree = "<group>"; };
+		E9202DC22C18F2CE007F5650 /* GiveawayDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsView.swift; sourceTree = "<group>"; };
+		E9202DC42C18F4A4007F5650 /* GiveawayDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GiveawayDetailsViewModel.swift; sourceTree = "<group>"; };
+		E9202DC62C1906EE007F5650 /* String+DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+DateFormatter.swift"; sourceTree = "<group>"; };
 		E95D9D6C2C13355400165CCA /* Gammers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Gammers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E95D9D6F2C13355400165CCA /* GammersApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GammersApp.swift; sourceTree = "<group>"; };
 		E95D9D732C13355600165CCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -154,7 +158,8 @@
 		E9202DC12C18F29B007F5650 /* DetailsScreen */ = {
 			isa = PBXGroup;
 			children = (
-				E9202DC22C18F2CE007F5650 /* GivawayDetailsView.swift */,
+				E9202DC22C18F2CE007F5650 /* GiveawayDetailsView.swift */,
+				E9202DC42C18F4A4007F5650 /* GiveawayDetailsViewModel.swift */,
 			);
 			path = DetailsScreen;
 			sourceTree = "<group>";
@@ -251,6 +256,7 @@
 			children = (
 				E95D9DAF2C1436BE00165CCA /* InfoPlistHelper.swift */,
 				E95D9DB42C143C4B00165CCA /* NetworkLayer */,
+				E9202DC62C1906EE007F5650 /* String+DateFormatter.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -533,10 +539,12 @@
 				E95D9DBC2C1452EB00165CCA /* NetworkManager.swift in Sources */,
 				E9202DC02C15FE27007F5650 /* GiveawayListItem.swift in Sources */,
 				E9202DBB2C15FD38007F5650 /* CarouselItemView.swift in Sources */,
+				E9202DC72C1906EE007F5650 /* String+DateFormatter.swift in Sources */,
 				E95D9DC62C1486A300165CCA /* HomeScreenViewModel.swift in Sources */,
+				E9202DC52C18F4A4007F5650 /* GiveawayDetailsViewModel.swift in Sources */,
 				E95D9DBA2C14402A00165CCA /* GiveawayEntityModel.swift in Sources */,
 				E9202DBE2C15FE15007F5650 /* GiveawayListView.swift in Sources */,
-				E9202DC32C18F2CE007F5650 /* GivawayDetailsView.swift in Sources */,
+				E9202DC32C18F2CE007F5650 /* GiveawayDetailsView.swift in Sources */,
 				E95D9DB02C1436BE00165CCA /* InfoPlistHelper.swift in Sources */,
 				E95D9DB62C143CE700165CCA /* GiveawayEndpoint.swift in Sources */,
 				E95D9DC42C14868100165CCA /* HomeScreenView.swift in Sources */,

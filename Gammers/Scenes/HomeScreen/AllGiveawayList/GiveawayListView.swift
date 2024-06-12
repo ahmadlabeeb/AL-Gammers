@@ -16,8 +16,14 @@ struct GiveawayListView: View {
         ScrollView {
             LazyVStack(spacing: 10) {
                 ForEach(items.filter{$0.platforms.lowercased().contains(selectedCategory.lowercased()) || selectedCategory == "all"}) { item in
-                    GiveawayListItem(item: item)
-                        .padding([.leading, .trailing])
+                    NavigationLink {
+                        GiveawayDetailsView(viewModel: GiveawayDetailsViewModel(item: item))
+                    } label: {
+                        GiveawayListItem(item: item)
+                            .padding([.leading, .trailing])
+                    }
+
+                    
                 }
             }
             .padding(.top)

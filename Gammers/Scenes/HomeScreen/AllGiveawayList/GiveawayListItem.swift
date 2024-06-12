@@ -23,7 +23,7 @@ struct GiveawayListItem: View {
                 case .success(let image):
                     image
                         .resizable()
-                        .scaledToFill()
+                        .imageScale(.medium)
                         .frame(width: width,height: height)
                         .clipped()
                         .overlay(
