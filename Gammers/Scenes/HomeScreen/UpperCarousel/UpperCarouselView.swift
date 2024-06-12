@@ -16,9 +16,13 @@ struct UpperCarouselView: View {
             ScrollView(.horizontal, showsIndicators: false) {
                 LazyHStack(spacing: 10) {  // Set the spacing between items here
                     ForEach(items) { item in
-                        CarouselItemView(item: item)
-                            .frame(width: UIScreen.main.bounds.width - 60)  // Page width with padding
-                            .padding(.horizontal, 10)  // Horizontal padding to center items
+                        NavigationLink {
+                            GiveawayDetailsView(viewModel: GiveawayDetailsViewModel(item: item))
+                        } label: {
+                            CarouselItemView(item: item)
+                                .frame(width: UIScreen.main.bounds.width - 60)  // Page width with padding
+                                .padding(.horizontal, 10)  
+                        }
                     }
                 }
             }

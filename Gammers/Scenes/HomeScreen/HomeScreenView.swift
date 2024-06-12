@@ -25,22 +25,28 @@ struct HomeScreenView: View {
     var body: some View {
         NavigationView {
             ZStack {
-                if viewModel.isloading {
-                    Text("Loading...")
-                }
-                else {
-                    VStack {
-                        UpperCarouselView(items: viewModel.itemsList)
-                        
+                VStack {
+                    if viewModel.epicsLoading {
+                        Text("Loading...")
+                            .frame(height: 300)
+                    }else {
+                        UpperCarouselView(items: viewModel.epicItemsList)
+                    }
+                    
+                    if viewModel.allListLoading {
+                        Text("Loading...")
+                    }else {
                         filterList()
                         
                         GiveawayListView(items: viewModel.itemsList, selectedCategory: selectedCategory)
                     }
                 }
+                
             }
         }
         .onAppear(perform: {
             viewModel.getAllGiveaways()
+            viewModel.getEpicGamesGiveaways()
         })
     }
     

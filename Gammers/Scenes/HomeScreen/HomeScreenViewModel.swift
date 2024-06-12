@@ -13,20 +13,33 @@ class HomeScreenViewModel: ObservableObject {
     private let repo: HomeScreenRepo
     private var subscription = [AnyCancellable]()
     @Published var itemsList: [GiveawayEntityModel] = [GiveawayEntityModel]()
+    @Published var epicItemsList: [GiveawayEntityModel] = [GiveawayEntityModel]()
     @Published var categories: [String] = []
-    @Published var isloading = false
+    @Published var allListLoading = false
+    @Published var epicsLoading = false
     
     init(repo: HomeScreenRepo) {
         self.repo = repo
     }
     
     func getAllGiveaways() {
-        isloading = true
+        allListLoading = true
         repo.getAllGiveaways().sink {[weak self] _ in
-            self?.isloading = false
+            self?.allListLoading = false
         } receiveValue: {[weak self] value in
             self?.itemsList = value
             self?.categories = self?.getCategoriesFromData(giveaways: value) ?? []
+        }
+        .store(in: &subscription)
+
+    }
+    
+    func getEpicGamesGiveaways() {
+        epicsLoading = true
+        repo.getEpicGamesGiveaways().sink {[weak self] _ in
+            self?.epicsLoading = false
+        } receiveValue: {[weak self] value in
+            self?.epicItemsList = value
         }
         .store(in: &subscription)
 

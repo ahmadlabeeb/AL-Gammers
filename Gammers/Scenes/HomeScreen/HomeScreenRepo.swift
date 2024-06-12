@@ -20,4 +20,8 @@ class HomeScreenRepo {
     func getAllGiveaways() -> Future<[GiveawayEntityModel], Error> {
         return networkManger.requestData(target: .getGiveaways(platform: nil))
     }
+    
+    func getEpicGamesGiveaways() -> Future<[GiveawayEntityModel], Error> {
+        return networkManger.requestData(target: .getGiveaways(platform: "epic-games-store"))
+    }
 }
